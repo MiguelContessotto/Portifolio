@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --bg-deep: #050505;
+    --bg-card: #0d0d0d;
+    --red-primary: #ff003c;
+    --red-glow: rgba(255, 0, 60, 0.4);
+    --text-main: #e0e0e0;
+}
+
+body {
+    background-color: var(--bg-deep);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(255, 0, 60, 0.03) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(255, 0, 60, 0.03) 0%, transparent 40%);
+    background-attachment: fixed;
+}
+
+.font-mono {
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    background-color: rgba(5, 5, 5, 0.85) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 0, 60, 0.2);
+}
+
+.navbar-brand {
+    color: var(--red-primary) !important;
+    text-shadow: 0 0 10px var(--red-glow);
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    color: var(--text-main) !important;
+    font-family: 'Share Tech Mono', monospace;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--red-primary) !important;
+    text-shadow: 0 0 8px var(--red-glow);
+}
+
+.my-hero {
+    padding-top: 100px;
+}
+
+.tech-card {
+    background-color: var(--bg-card);
+    border: 1px solid #1a1a1a;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.tech-card:hover {
+    border-color: rgba(255, 0, 60, 0.5);
+}
+
+.text-red {
+    color: var(--red-primary) !important;
+    text-shadow: 0 0 12px var(--red-glow);
+}
+
+.btn-tech-danger {
+    background-color: var(--red-primary);
+    color: #ffffff;
+    font-family: 'Share Tech Mono', monospace;
+    border: 1px solid var(--red-primary);
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-tech-danger:hover {
+    background-color: #d10031;
+    color: #ffffff;
+    box-shadow: 0 0 20px var(--red-glow);
+    border-color: #ff003c;
+}
+
+.btn-outline-tech {
+    background-color: transparent;
+    color: var(--text-main);
+    font-family: 'Share Tech Mono', monospace;
+    border: 1px solid #333333;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-tech:hover {
+    border-color: var(--red-primary);
+    color: var(--red-primary);
+    box-shadow: 0 0 15px rgba(255, 0, 60, 0.2);
+}
+
+main {
+    padding-bottom: 80px;
+}
+
+.navbar-glass {
+    background-color: rgba(18, 18, 18, 0.85) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(220, 53, 69, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link {
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #dc3545 !important;
+    transform: translateY(-1px);
+}
+
+
+body {
+    background-color: #070709; 
+}
+
+.bg-code-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 200vh;
+    z-index: -2;
+    pointer-events: none;
+    
+    opacity: 0.40; 
+    
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(255, 30, 50, 0.95) 0px,
+        rgba(255, 30, 50, 0.95) 18px,
+        transparent 18px,
+        transparent 36px
+    );
+    
+    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140"><text x="0" y="25" fill="black" font-family="monospace" font-size="16" font-weight="bold">10101001</text><text x="45" y="60" fill="black" font-family="monospace" font-size="16" font-weight="bold">01011010</text><text x="10" y="95" fill="black" font-family="monospace" font-size="16" font-weight="bold">11001001</text><text x="70" y="130" fill="black" font-family="monospace" font-size="16" font-weight="bold">00110101</text></svg>');
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140"><text x="0" y="25" fill="black" font-family="monospace" font-size="16" font-weight="bold">10101001</text><text x="45" y="60" fill="black" font-family="monospace" font-size="16" font-weight="bold">01011010</text><text x="10" y="95" fill="black" font-family="monospace" font-size="16" font-weight="bold">11001001</text><text x="70" y="130" fill="black" font-family="monospace" font-size="16" font-weight="bold">00110101</text></svg>');
+    
+    mask-repeat: repeat;
+    -webkit-mask-repeat: repeat;
+
+    filter: drop-shadow(0 0 4px rgba(255, 20, 40, 0.6));
+
+    animation: codeScroll 20s linear infinite;
+}
+
+@keyframes codeScroll {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50vh);
+    }
+}
