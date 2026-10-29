@@ -6,7 +6,7 @@ Este projeto consiste em um portfólio web responsivo e moderno, desenvolvido pa
 ---
 
 ## 🔗 Link da Aplicação
-Acesse a aplicação em funcionamento: portifoliomiguel-cinco.vercel.app
+Acesse a aplicação em funcionamento: portifoliomiguel-cinco.vercel.ap
 
 ---
 
