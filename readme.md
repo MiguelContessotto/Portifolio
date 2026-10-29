@@ -7,7 +7,7 @@ Este projeto consiste em um portfólio web responsivo e moderno, desenvolvido pa
 
 ## 🔗 Link da Aplicação
 Acesse a aplicação em funcionamento: [Link para o Portfólio na Vercel](https://portifoliomiguel-five.vercel.app/)
-
+Acesse em meu github: [link para o Portifólio no Github](https://github.com/MiguelContessotto/Portifolio)
 ---
 
 ## 🛠️ Tecnologias e Bibliotecas Utilizadas
